@@ -1,0 +1,18 @@
+{
+   "AWSTemplateFormatVersion" : "2010-09-09",
+   "Resources" : {
+    "myVpc" : {
+      "Type" : "AWS::EC2::VPC",
+        "Properties" : {
+           "CidrBlock" : "120.0.0.0/16",
+           "EnableDnsSupport" : "True",
+           "EnableDnsHostnames" : "True",
+           "InstanceTenancy" : "default",
+            "Tags" : [{"Key" : "Name", "Value" : "SampleVPC"}]
+        }
+ 
+      }
+
+    }
+
+}
